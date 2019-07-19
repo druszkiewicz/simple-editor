@@ -5,7 +5,7 @@ It's a small editor with storage feature
 
 **a tu link do strony: [simple-editor](#)**
 
-**po sklonowaniu repozytorium zainstaluj Node ze strony [NodeJS](https://nodejs.org/) i**
+**po sklonowaniu repozytorium zainstaluj Node ze strony [NodeJS](https://nodejs.org/) i następnie**
 
 `npm install -g gulp-cli`
 
