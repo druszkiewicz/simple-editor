@@ -32,26 +32,39 @@
 
 // console.log(personRead.name);
 
-const inputField = document.querySelector('.inputField--js');
-if (localStorage.getItem('inputField')) {
-    inputField.value=localStorage.getItem('inputField');
-};
-inputField.addEventListener('keyup', (e) => {
-    //console.log(e.target.value);
-    localStorage.setItem('inputField',e.target.value);
-});
+//to do lekcji
+
+// const inputField = document.querySelector('.inputField--js');
+// if (localStorage.getItem('inputField')) {
+//     inputField.value=localStorage.getItem('inputField');
+// };
+// inputField.addEventListener('keyup', (e) => {
+//     //console.log(e.target.value);
+//     localStorage.setItem('inputField',e.target.value);
+// });
 
 const inputArea = document.querySelector('.edit--js');
+const counter = document.querySelector('.counter--js');
 const saveKey = document.querySelector('.saveBtn--js');
 const loadKey = document.querySelector('.loadBtn--js');
 
-const writeToTextArea = function () {
-    inputArea.value = localStorage.getItem('edytor');
+function countCharacters (text) {
+    counter.innerHTML = 'znaki: ' + text.length;
+    return text.length;  
 };
 
+
+const writeToTextArea = function () {
+    inputArea.value = localStorage.getItem('edytor');
+    countCharacters(inputArea.value);
+};
+
+
 if (localStorage.getItem('edytor')) {
-    console.log('cos');
     writeToTextArea();
+}
+else {
+    countCharacters(inputArea.value); 
 }
 
 saveKey.addEventListener('click', (e) => {
@@ -60,5 +73,7 @@ saveKey.addEventListener('click', (e) => {
 
 loadKey.addEventListener('click', writeToTextArea);
 
-
+inputArea.addEventListener('keyup', (e) => {
+    countCharacters(inputArea.value)
+});
 
