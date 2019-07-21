@@ -3,7 +3,7 @@ It's a small editor with storage feature
 
 **mały projekt szkolenia frontend'u, w którym biorę udział,**
 
-**a tu link do strony: [simple-editor](#)**
+**a tu link do strony: [simple-editor](https://druszkiewicz.github.io/simple-editor/)**
 
 **po sklonowaniu repozytorium zainstaluj Node ze strony [NodeJS](https://nodejs.org/) i następnie**
 
