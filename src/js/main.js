@@ -49,7 +49,7 @@ const saveKey = document.querySelector('.form__button--saveJs');
 const loadKey = document.querySelector('.form__button--loadJs');
 
 function countCharacters (text) {
-    counter.innerHTML = 'znaki: ' + text.length;
+    counter.innerHTML = 'licznik znaków: ' + text.length;
     return text.length;  
 };
 
