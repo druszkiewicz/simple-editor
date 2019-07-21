@@ -43,10 +43,10 @@
 //     localStorage.setItem('inputField',e.target.value);
 // });
 
-const inputArea = document.querySelector('.edit--js');
-const counter = document.querySelector('.counter--js');
-const saveKey = document.querySelector('.saveBtn--js');
-const loadKey = document.querySelector('.loadBtn--js');
+const inputArea = document.querySelector('.form__message--js');
+const counter = document.querySelector('.form__counter--js');
+const saveKey = document.querySelector('.form__button--saveJs');
+const loadKey = document.querySelector('.form__button--loadJs');
 
 function countCharacters (text) {
     counter.innerHTML = 'znaki: ' + text.length;
@@ -68,10 +68,16 @@ else {
 }
 
 saveKey.addEventListener('click', (e) => {
+    e.preventDefault();   //blokada wysyłania strony
     localStorage.setItem('edytor', inputArea.value);
 });
 
-loadKey.addEventListener('click', writeToTextArea);
+// loadKey.addEventListener('click', writeToTextArea);
+
+loadKey.addEventListener('click', (e) => {
+    e.preventDefault();
+    writeToTextArea();
+});
 
 inputArea.addEventListener('keyup', (e) => {
     countCharacters(inputArea.value)

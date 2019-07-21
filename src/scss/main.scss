@@ -1,5 +1,6 @@
 @import "_normalize";
 @import "_variables";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap&subset=latin-ext');
 
 
 html {
@@ -13,6 +14,77 @@ html {
 }
 
 body {
-   color: $yellow;
-   background: $violet;
+   color: black;
+   background: lightgray;
+   font-family: 'Open Sans';
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
 }
+
+.main {
+   max-width: 544px;
+   min-width: 375px;
+   width: 100%;
+}
+
+.header {
+   font-weight: 600;
+   font-size: 44px;
+   margin: 0;
+   margin-bottom: 48px;
+   padding: 0 0 0 16px;
+}
+
+.form {
+   &__actions {
+      margin-top: 48px;
+      display: flex;
+      justify-content: space-between;
+   }
+   &__button {
+      border: 1px solid #121232;
+      border-radius: 4px;
+      padding: 16px;
+      min-width: 150px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      &--save {
+         background: #121232;
+         color: #fff;
+      }
+   }
+   &__counter {
+      padding: 0 0 0 16px;
+   }
+   &__label {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 8px;
+      padding: 0 0 0 16px;
+   }
+   &__message {
+      width: 100%;
+      background: #FFFFFF;
+      border: 1px solid #D3D4D8;
+      border-radius: 8px;
+      min-height: 30vh;
+      padding: 12px;
+   }
+}
+
+// .card {
+//    display: grid;
+//    grid-template-columns: 1fr, 2fr, 1fr;
+//    min-height: 100vh;
+//    text-align: center;
+//    &__text {
+//       margin: 0 auto;
+//    }
+// }
+
+// .buttons {
+//    display: flex;
+//    justify-content: space-between;
+// }

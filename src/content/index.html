@@ -27,13 +27,22 @@
 </head>
 
 <body>
-   <h1>Simple editor!</h1>
-   <textarea rows="10" cols="60" class="edit--js"></textarea>
-   <h3 class="counter--js">counter:</h3>
-   <!-- <input class="inputField--js">  to do lekcji -->
-   <button class="loadBtn--js">Load</button>
-   <button class="saveBtn--js">Save</button>
-
+   <main class="main">
+      <h1 class="header">Simple editor!</h1>
+      <form class="form">
+            <p class="form__wraper">
+                  <label class="form__label" for="message">Your message:</label>
+                  <textarea id="message" class="form__message form__message--js"></textarea>
+                  <h3 class="form__counter form__counter--js">counter:</h3>
+            </p>         
+            <!-- <input class="inputField--js">  to do lekcji -->
+            <div class="form__actions">
+               <button class="form__button form__button--load form__button--loadJs">Load</button>
+               <button class="form__button form__button--save form__button--saveJs">Save</button>
+            </div>
+      </form>
+      
+   </main>
    <script src="js/main.js"></script>
 </body>
 
