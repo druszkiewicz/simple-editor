@@ -336,14 +336,24 @@ body {
 .main {
   max-width: 544px;
   min-width: 319px;
-  width: 100%; }
+  width: 100%;
+  position: relative; }
 
 .header {
   font-weight: 600;
   font-size: 44px;
   margin: 0;
   margin-bottom: 48px;
-  padding: 0 0 0 16px; }
+  padding: 0 0 0 16px;
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: -webkit-transform .3s ease-in-out;
+  -o-transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out; }
+  .header:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1); }
 
 .form__actions {
   margin-top: 48px;
@@ -360,7 +370,18 @@ body {
   padding: 16px;
   min-width: 150px;
   font-weight: 600;
-  letter-spacing: 0.5px; }
+  letter-spacing: 0.5px;
+  -webkit-transition: color .1s linear, background .1s ease-in-out, -webkit-transform .1s ease-in-out;
+  transition: color .1s linear, background .1s ease-in-out, -webkit-transform .1s ease-in-out;
+  -o-transition: transform .1s ease-in-out, color .1s linear, background .1s ease-in-out;
+  transition: transform .1s ease-in-out, color .1s linear, background .1s ease-in-out;
+  transition: transform .1s ease-in-out, color .1s linear, background .1s ease-in-out, -webkit-transform .1s ease-in-out; }
+  .form__button:hover {
+    -webkit-transform: scaleY(1.1);
+        -ms-transform: scaleY(1.1);
+            transform: scaleY(1.1);
+    color: tomato;
+    background: gray; }
   .form__button--save {
     background: #121232;
     color: #fff; }
@@ -372,7 +393,16 @@ body {
   display: block;
   font-size: 14px;
   margin-bottom: 8px;
-  padding: 0 0 0 16px; }
+  padding: 0 0 0 16px;
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: -webkit-transform .3s ease-in-out;
+  -o-transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out; }
+  .form__label:hover {
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05); }
 
 .form__message {
   width: 100%;
