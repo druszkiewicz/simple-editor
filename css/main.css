@@ -339,6 +339,18 @@ body {
   width: 100%;
   position: relative; }
 
+.header-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 32px; }
+  .header-logo__scr {
+    border: 1px solid;
+    border-radius: 8px; }
+
 .header {
   font-weight: 600;
   font-size: 44px;
