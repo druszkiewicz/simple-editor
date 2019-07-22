@@ -14,3 +14,4 @@ It's a small editor with storage feature
 `gulp`
 
 Żeby opublikować swoją pracę na gh-pages uruchom `npm run deploy`
+

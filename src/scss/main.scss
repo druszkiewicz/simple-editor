@@ -40,6 +40,16 @@ body {
    position: relative;
 }
 
+.header-logo {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 32px;
+   &__scr {
+      border: 1px solid;
+      border-radius: 8px;
+   }
+}
+
 .header {
    font-weight: 600;
    font-size: 44px;
